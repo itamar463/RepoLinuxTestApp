@@ -30,7 +30,7 @@ echo "Commit versions of '$file' in branch '$branch':" > "$branch"_"$file".log
 echo >> "$branch"_"$file".log
 
 # Get the list of commit hashes for the file in the branch
-commits=$(git log --pretty=format:'%H' --follow "$file" -- $branch)
+#commits=$(git log --pretty=format:'%H' --follow "$file" -- $branch)
 
 # Iterate through the list of commit hashes and get the commit message and date for each commit
 i=1
