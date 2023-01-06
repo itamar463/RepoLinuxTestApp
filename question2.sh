@@ -46,5 +46,3 @@ while read -r commit; do
     echo "----------------------------" >> "$branch"_"$file".log
     i=$((i+1))
 done <<< "$commits"
-
-#echo "Log file '$file'_'$branch'_log.txt created successfully"
