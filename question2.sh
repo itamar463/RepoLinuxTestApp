@@ -19,7 +19,7 @@ then
 fi
 
 # Check if the file exists in the branch
-if ! git ls-tree -r $branch -- "$file"
+if ! git show $branch:"$file" &> /dev/null
 then
     echo "Error: The file '$file' does not exist in the branch '$branch'"
     exit 1
@@ -30,7 +30,7 @@ echo "Commit versions of '$file' in branch '$branch':" > "$branch"_"$file".log
 echo >> "$branch"_"$file".log
 
 # Get the list of commit hashes for the file in the branch
-#commits=$(git log --pretty=format:'%H' --follow "$file" -- $branch)
+commits=$(git log --pretty=format:'%H' -- "$file" -- $branch)
 
 # Iterate through the list of commit hashes and get the commit message and date for each commit
 i=1
@@ -43,9 +43,8 @@ while read -r commit; do
     echo "Date: $date" >> "$branch"_"$file".log
     echo "----------------------" >> "$branch"_"$file".log
     echo "CONTENT FILE COMMITED" >> "$branch"_"$file".log
-    echo >> "$branch"_"$file".log
     echo "----------------------------" >> "$branch"_"$file".log
-    i=i+1
+    i=$((i+1))
 done <<< "$commits"
 
 #echo "Log file '$file'_'$branch'_log.txt created successfully"

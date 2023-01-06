@@ -1,10 +1,44 @@
 Commit versions of 'demo1.sh' in branch 'main':
 
 Branch: main
-Commit 1: 
+Commit 1: 8f119c999be02c120a658272ca1e51de9c63b8a2
+Commit Message: check
+Date: Fri Jan 6 11:15:56 2023 +0200
+----------------------
+CONTENT FILE COMMITED
+----------------------------
+Branch: main
+Commit 2: 150f348ce81e046fedf043175e12ee0f455fedf2
 Commit Message: df
 Date: Fri Jan 6 10:32:33 2023 +0200
 ----------------------
 CONTENT FILE COMMITED
-
+----------------------------
+Branch: main
+Commit 3: 0e1ff7f20ba08f7b791f9a02f334030b654592f0
+Commit Message: ss
+Date: Wed Jan 4 14:55:15 2023 +0200
+----------------------
+CONTENT FILE COMMITED
+----------------------------
+Branch: main
+Commit 4: 6645ba798df5685e8aafe8e5f96936d36ea78d43
+Commit Message: adding demos
+Date: Wed Jan 4 13:48:48 2023 +0200
+----------------------
+CONTENT FILE COMMITED
+----------------------------
+Branch: main
+Commit 5: f1a88c79c2f73666f0b8aebb3a5dc3f4f4875e26
+Commit Message: adding demos
+Date: Wed Jan 4 13:41:58 2023 +0200
+----------------------
+CONTENT FILE COMMITED
+----------------------------
+Branch: main
+Commit 6: 1c599c18cdac90079f2bf6b670c9ec55088bcdd6
+Commit Message: demo1.sh added
+Date: Wed Jan 4 13:14:42 2023 +0200
+----------------------
+CONTENT FILE COMMITED
 ----------------------------
